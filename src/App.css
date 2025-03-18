@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 5rem;
+}
+
+body {
+  background: #010103;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 7%;
+}
+
+.heading {
+  text-align: center;
+  color: #71e2fe;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+  padding-top: 0.2em;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background: #ffc107;
+  cursor: pointer;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+.header {
+  background: #010103;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 60px ;
+  border-bottom: 0.2rem solid #ffcf3f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header .logo img {
+  max-width: 75px;
+}
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.8rem;
+  color: #dcf3ff;
+}
+.header .navbar a:hover {
+  color: #ffc107;
+  border-bottom: 0.1rem solid #ffc107;
+  padding-bottom: 0.5rem;
+}
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(0 0 0 / 90%), rgb(68 68 68 / 35%)),
+    url(https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?b=1&s=612x612&w=0&k=20&c=2CBPkgQI2PiNySSNi1tvwVSYFqOBgfgrgDPCyelIVrk=) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 60rem;
+}
+.home span {
+  color: #ffc107;
+  text-transform: uppercase;
+}
+.home .content h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home .content p {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+.about .row .content .head{
+  color: #ffd965;
+  font-size: 3rem;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background: #13131a;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+  margin-right: 50px;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about .row .content p {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .box-container .box {
+  padding: 5rem;
+  text-align: center;
+  border: 0.1rem solid #ffc107;
+}
+
+.menu .box-container .box img {
+  height: 14rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.menu .box-container .box h3 {
+  color: #fff;
+  font-size: 1.9rem;
+  padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span {
+  font-size: 1.1rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+  background: #322600;
+  transition: 0.5s;
+}
+.alert-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.review .box-container .box {
+  border: 0.1rem solid #ffc107;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .box-container .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+}
+.contact .row {
+  display: flex;
+  background: #13131a;
+  gap: 1rem;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form h3 {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  color: #0efdcd;
+  text-decoration: underline;
+}
+
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #13131a;
+  border: 0.1rem solid #ffbf00;
+}
+
+.contact .row form .inputBox input, .inputBox textarea {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+}
+
+.blogs .box-container .box {
+  border: 0.2rem solid #ffc107;
+}
+
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blogs .box-container .box .image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.blogs .box-container .box .content span {
+  color: #ffc107;
+  display: block;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.blogs .box-container .box .content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 1rem 0;
+}
+
+.footer {
+  background: #13131a;
+  text-align: center;
+}
+
+.footer .share {
+  padding: 1rem 0;
+}
+
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: 0.2rem solid #ffc107;
+  margin: 0.3rem;
+  border-radius: 50%;
+}
+
+.footer .share a:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.footer .credit {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+}
+
+.footer .credit span {
+  color: #ffc107;
+}
+
+
+.cart-icon {
+  align-items: center;
+  color: #dcf3ff;
+  font-size: 2rem;
+}
+
+.cart-count {
+  position: absolute;
+  top: 2.5rem;
+  right: 4 rem;
+  background: #ffc107;
+  color: #010103;
+  border-radius: 50%;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+}
+
+.cart {
+  padding: 2rem 7%;
+  background-color: #13131a;
+}
+
+.cart .heading {
+  color: #71e2fe;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+
+.cart .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.cart .box-container .carto p{
+  text-align: center;
+  color: #16ce41;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+  padding-top: 5em;
+  font-size: 4rem;
+}
+.cart .box-container .carto .btn{
+  margin-left: 32em;
+  margin-bottom: 10em;
+}
+
+.cart .box {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid #ffc107;
+  background-color: #ffc107;
+}
+
+.cart .box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.cart .box h3 {
+  color: #fff;
+  font-size: 1.9rem;
+  padding: 1rem 0;
+}
+
+.cart .box .price {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+}
+
+.cart .box .btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ffc107;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background: #000;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+  }
+
+  .header .navbar.active {
+    right: 0;
+  }
+
+  .header .navbar a {
+    color: #fff;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+
+  .home .content p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
