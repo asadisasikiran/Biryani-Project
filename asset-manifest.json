@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Biryani-Project/static/css/main.8521d087.css",
+    "main.js": "/Biryani-Project/static/js/main.f70946ec.js",
+    "static/js/453.d6f493e7.chunk.js": "/Biryani-Project/static/js/453.d6f493e7.chunk.js",
+    "static/media/heroo.jpg": "/Biryani-Project/static/media/heroo.43680331ecdd429568a4.jpg",
+    "index.html": "/Biryani-Project/index.html",
+    "main.8521d087.css.map": "/Biryani-Project/static/css/main.8521d087.css.map",
+    "main.f70946ec.js.map": "/Biryani-Project/static/js/main.f70946ec.js.map",
+    "453.d6f493e7.chunk.js.map": "/Biryani-Project/static/js/453.d6f493e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8521d087.css",
+    "static/js/main.f70946ec.js"
+  ]
+}
