@@ -18,10 +18,10 @@ const Contact = () => {
               <input type="email" placeholder="email" />
             </div>
             <div class="inputBox">
-              <input type="number" placeholder="number" />
+              <input type="number" placeholder="Phone number" />
             </div>
             <div class="inputBox">
-              <textarea rows={5} placeholder="enter your address"></textarea>
+              <textarea rows={4} placeholder="enter your address"></textarea>
             </div>
             <input type="submit" value="contact now" class="btn" />
           </form>

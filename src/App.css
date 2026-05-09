@@ -367,6 +367,7 @@ section {
 .cart {
   padding: 2rem 7%;
   background-color: #13131a;
+  padding-top: 120px;
 }
 
 .cart .heading {
@@ -400,12 +401,22 @@ section {
   padding: 2rem;
   text-align: center;
   border: 0.1rem solid #ffc107;
-  background-color: #ffc107;
+  background-color:  #1f1f1f;
+  width: 32rem;
+  min-height: 42rem;
+}
+
+.cart .box:hover{
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px rgba(212,160,23,0.6);
+    border-color: #2b2b2b;
 }
 
 .cart .box img {
   width: 100%;
-  height: auto;
+  height: 220px;
+  object-fit: cover;
   margin-bottom: 1rem;
 }
 

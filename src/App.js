@@ -32,6 +32,12 @@ class App extends Component {
     });
   };
 
+  goToSection = () => {
+    this.setState({
+      showCart: false
+    });
+  };
+
   handleCartClick = () => {
     this.setState(prevState => ({
       showCart: !prevState.showCart
@@ -42,7 +48,7 @@ class App extends Component {
     const { cartItems, showCart } = this.state;
     return (
       <>
-        <Navbar cartCount={cartItems.length} handleCartClick={this.handleCartClick} />
+        <Navbar cartCount={cartItems.length} handleCartClick={this.handleCartClick} goToSection={this.goToSection} />
         {showCart ? (
           <Cart items={cartItems} removeFromCart={this.removeFromCart} />
         ) : (

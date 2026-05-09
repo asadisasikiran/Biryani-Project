@@ -4,7 +4,7 @@ import LogoImg from "../photos/biryani-logo.jpg";
 
 class Navbar extends Component {
   render() {
-    const { cartCount, handleCartClick } = this.props;
+    const { cartCount, handleCartClick, goToSection } = this.props;
     return (
       <>
         <header className="header">
@@ -12,12 +12,12 @@ class Navbar extends Component {
             <img src={LogoImg} alt="" />
           </a>
           <nav className="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#review">Review</a>
-            <a href="#contact">Contact</a>
-            <a href="#blogs">Blogs</a>
+            <a href="#home" onClick={goToSection}>Home</a>
+            <a href="#about" onClick={goToSection}>About</a>
+            <a href="#menu" onClick={goToSection}>Menu</a>
+            <a href="#review" onClick={goToSection}>Review</a>
+            <a href="#contact" onClick={goToSection}>Contact</a>
+            <a href="#blogs" onClick={goToSection}>Blogs</a>
             <a href="#" className="cart-icon" onClick={handleCartClick}>
               <FaShoppingCart />
               {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
